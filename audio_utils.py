@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#This is from https://github.com/weixsong vocoder implementation, please see LICENSE-weixsong 
 
 import librosa
 import librosa.filters

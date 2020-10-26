@@ -1,3 +1,7 @@
+
+#This is from https://github.com/weixsong vocoder implementation, please see LICENSE-weixsong
+
+
 import tensorflow as tf
 
 
@@ -17,7 +21,7 @@ hparams = tf.contrib.training.HParams(
     train_steps=1000000,
     save_model_every=4000,
     gen_test_wave_every=10000,
-    gen_file='./data/mels/LJ001-0001.mel',
+    gen_file='/work/workspace/data/synthesis/waveglow/mels/LJ001-0001.mel',
     logdir_root='./logdir',
     decay_steps=50000,
     sigma=0.707,
@@ -32,18 +36,18 @@ hparams = tf.contrib.training.HParams(
     n_early_size=2,
 
     # local condition conv1d
-    lc_conv1d=True,
+    lc_conv1d=False,
     lc_conv1d_layers=2,
     lc_conv1d_filter_size=5,
     lc_conv1d_filter_num=128,
 
     # local condition encoding
-    lc_encode=False,
+    lc_encode=True,
     lc_encode_layers=2,
     lc_encode_size=128,
 
     # upsampling by transposed conv
-    transposed_upsampling=False,
+    transposed_upsampling=True,
     transposed_conv_layers=2,
     transposed_conv_layer1_stride=16,
     transposed_conv_layer2_stride=16,
