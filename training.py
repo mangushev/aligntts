@@ -1,4 +1,7 @@
 
+#This code contain some BERT code from https://github.com/google-research/bert, please see LICENSE-BERT
+
+
 import numpy as np
 np.set_printoptions(edgeitems=25, linewidth=10000, precision=4, suppress=True)
 

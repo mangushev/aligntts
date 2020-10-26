@@ -1,4 +1,8 @@
 
+#This code contain transformet BERT code from https://github.com/google-research/bert, please see LICENSE-BERT
+
+
+
 import tensorflow as tf
 import tensorflow_probability as tfp
 tfd = tfp.distributions
@@ -784,7 +788,6 @@ class AlignttsModel(object):
       self._log_alpha, self._per_example_alignment_loss = calculate_alpha(self._mu_and_variance[:, :, :self._num_mels], self._mu_and_variance[:, :, self._num_mels:], input_lengths, mel_tensor, mel_lengths)
 
       self._mix_durations = calculate_durations(self._log_alpha, input_lengths, mel_lengths)
-      #self._mix_durations  = tf.Print(_mix_durations , [_mix_durations], "Mix Durations", summarize=50)
 
     #5.2). Length regulator
     #increase hidden lengths as per length predictor values and alpha speech speed coefficient
