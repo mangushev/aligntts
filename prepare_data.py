@@ -186,4 +186,3 @@ if __name__ == '__main__':
     logger.debug ("Running with parameters: {}".format(FLAGS))
 
     main()
-

@@ -6,4 +6,3 @@ ix_to_char = { i:ch for i,ch in enumerate(alphabet) }
 
 nrof_labels = len(alphabet)
 nrof_classes = nrof_labels
-
